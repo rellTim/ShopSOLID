@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WindowShopController">
+    <children>
+          <Label layoutX="492.0" layoutY="14.0" prefHeight="56.0" prefWidth="417.0" style="-fx-background-color: #F39C63; -fx-background-radius: 12;" text="Welcome to the online store" textAlignment="CENTER" textFill="#4a568f">
+              <font>
+                  <Font name="Georgia" size="33.0" />
+              </font>
+          </Label>
+          <Label layoutX="614.0" layoutY="82.0" prefHeight="81.0" prefWidth="173.0" style="-fx-background-color: #F39C63; -fx-background-radius: 12;" text="FAST" textAlignment="CENTER" textFill="#4a568f">
+              <font>
+                  <Font name="Georgia" size="69.0" />
+              </font>
+          </Label>
+      <AnchorPane layoutX="1.0" layoutY="178.0" prefHeight="648.0" prefWidth="1400.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <CheckBox fx:id="boxBread" layoutX="30.0" layoutY="141.0" mnemonicParsing="false" text="Хлеб - 50 руб." />
+            <CheckBox fx:id="boxMeat" layoutX="174.0" layoutY="141.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="131.0" text="Говядина - 300 руб." />
+            <ImageView fitHeight="119.0" fitWidth="94.0" layoutX="32.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/2427860_baguette_bread_bread%20loaf_food_toast_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="98.0" layoutX="192.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/2427885_beef_food_meat_protein_steak_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="98.0" layoutX="349.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/5404326_cup_drink_glass_milk_icon.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="boxMilk" layoutX="338.0" layoutY="141.0" mnemonicParsing="false" text="Молоко - 90 руб." />
+            <Button fx:id="buttonAddToCart" layoutX="629.0" layoutY="565.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #F39C63;" text="В корзину" textFill="#f5f0f0">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Button>
+            <TextField fx:id="quantityOfBread" layoutX="51.0" layoutY="171.0" prefHeight="25.0" prefWidth="56.0" promptText="Кол-во" style="-fx-background-radius: 5;" />
+            <TextField fx:id="quantityOfMeat" layoutX="209.0" layoutY="170.0" prefHeight="25.0" prefWidth="56.0" promptText="Кол-во" style="-fx-background-radius: 5;" />
+            <TextField fx:id="quantityOfMilk" layoutX="361.0" layoutY="168.0" prefHeight="25.0" prefWidth="56.0" promptText="Кол-во" style="-fx-background-radius: 5;" />
+            <StackPane layoutX="26.0" layoutY="217.0" prefHeight="150.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="564.0" layoutY="842.0" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #fafafa;" text="ООО &quot;FAST&quot; 2023 - 2023 Все права защищены">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonCart" layoutX="1232.0" layoutY="26.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #F39C63;" text="Корзина" textFill="#f5f0f0">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
